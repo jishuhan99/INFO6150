@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MyRobotoMonoFont';
+    src: url('font/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyRobotoSerifFont';
+    src: url('font/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyRobotoMonoFont';
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(221, 229, 182, 0.9);
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0px;
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'MyRobotoSerifFont';
+    font-size: 50px;
+    margin-right: 70px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.nav-item,
+.dropbtn {
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ADC178;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.footer {
+    text-align: left;
+    padding: 10px;
+    font-size: 8px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-section {
+    background-color: #F0EAD2;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 10px;
+}
+
+.search-box input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 100%;
+}
+
+.search-box button {
+    cursor: pointer;
+    height: auto;
+    padding: 5px 15px;
+    height: 30px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #6C584C;
+}
+
+.sections-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.advanced-section {
+    background-color: rgba(240, 234, 210, 0.4);
+    flex: 1;
+    margin-right: 20px;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 300px;
+    font-size: 15px;
+}
+
+.advanced-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advanced-container h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.advanced-container select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.book-section {
+    flex: 2;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    align-self: start;
+}
+
+.book-container {
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 80%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.book-image {
+    margin: 15px 0 15px 15px;
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.book-info h2 {
+    font-size: 18px;
+    color: black;
+}
+
+.book-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 13px;
+    color: #7a7171;
+}
+
+.reserve-button {
+    padding: 10px 10px;
+    font-size: 12px;
+    background-color: rgb(80, 77, 77);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+    align-self: start;
+    margin-bottom: 5px;
+}

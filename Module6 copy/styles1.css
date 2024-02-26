@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'MyRobotoMonoFont';
+    src: url('font/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MyRobotoSerifFont';
+    src: url('font/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf') format('truetype');
+}
+
+body {
+    font-family: 'MyRobotoMonoFont';
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(221, 229, 182, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: 'MyRobotoSerifFont';
+    font-size: 50px;
+    margin-right: 70px;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+.nav-item,
+.dropbtn {
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ADC178;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.background-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-image: url('pics/will-van-wingerden-dsvJgiBJTOs-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.welcome-section h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box input {
+    margin-right: 10px;
+    padding: 10px 15px;
+    font-size: 1.2em;
+    width: 300px;
+}
+
+.search-box button {
+    cursor: pointer;
+    height: 100%;
+    padding: 10px 15px;
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #6C584C;
+}
+
+.main-content {
+    background-color: rgba(168, 132, 103, 0.8);
+    padding: 20px;
+    width: 80vw;
+    max-width: 800px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.visit-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: #F0EAD2;
+    padding: 20px;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visit-info,
+.location-info {
+    flex: 1;
+    margin: 10px;
+}
+
+.visit-info h2 {
+    white-space: nowrap;
+    font-size: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0;
+}
+
+.image-container {
+    flex: 1.5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.open-indicator {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.footer {
+    text-align: left;
+    padding: 10px;
+    font-size: 8px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}

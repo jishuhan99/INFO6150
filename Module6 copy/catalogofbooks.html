@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vallejo Public Library</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Vallejo Public Library</div>
+            <div class="nav-items">
+                <a href="#" class="nav-item">Home</a>
+                <a href="#" class="nav-item">Library card</a>
+                <a href="#" class="nav-item">Loaning books</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Explore Vallejo</button>
+                    <div class="dropdown-content">
+                        <a href="#">General Inquiries</a>
+                        <a href="#">Catalog of books</a>
+                        <a href="#">News</a>
+                        <a href="#">Search books</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <div class="search-box">
+            <input type="text" placeholder="Articles, books and more">
+            <button>SEARCH</button>
+        </div>
+    </section>
+
+    <div class="sections-container">
+        <section class="advanced-section">
+            <div class="advanced-container">
+                <h1>ADVANCED SEARCH</h1>
+                Author Gender:<select name="authorGender" id="authorGender">
+                    <option value=""></option>
+                </select>
+                <br>
+                Author: <select name="author" id="author">
+                    <option value=""></option>
+                </select>
+                <br>
+                Language:<select name="language" id="language">
+                    <option value=""></option>
+                </select>
+                <br>
+                Publisher:<select name="publisher" id="publisher">
+                    <option value=""></option>
+                </select>
+            </div>
+        </section>
+
+        <section class="book-section">
+            <article class="book-container">
+                <img src="pics/resource-database-F_z2cHsOXnM-unsplash.jpg" alt="Database Systems Cover"
+                    class="book-image">
+                <div class="book-info">
+                    <h2>Database Systems: A Practical Approach to Design, Implementation, and Management, Global Edition
+                    </h2>
+                    <p>Author: Thomas M. Connolly</p>
+                    <p>Language: English</p>
+                    <p>Publisher: Pearson Higher Education</p>
+                    <p>Number of Copies: 30</p>
+                    <p>Copies Available: 15</p>
+                    <button class="reserve-button">Reserve a copy</button>
+                </div>
+            </article>
+
+            <article class="book-container">
+                <img src="pics/resource-database-TIUyoNGM0no-unsplash.jpg" alt="SQL Data Analytics Cover"
+                    class="book-image">
+                <div class="book-info">
+                    <h2>SQL Data Analytics Made Easy: Your Step-by-Step Guide to Unlocking Data's Hidden Secrets</h2>
+                    <p>Author: L.D. Knowings</p>
+                    <p>Language: English</p>
+                    <p>Publisher: Independently published</p>
+                    <p>Number of Copies: 10</p>
+                    <p>Copies Available: 1</p>
+                    <button class="reserve-button">Reserve a copy</button>
+                </div>
+            </article>
+
+        </section>
+    </div>
+
+    <footer class="footer">
+        ©Vallejo Public Library
+        <p>All images on this website are sourced from Unsplash.</p>
+    </footer>
+</body>
+
+</html>
