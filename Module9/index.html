@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form id="registration-form">
+        <label for="name">Name (at least 3 characters):</label>
+        <input type="text" id="name" name="name" required minlength="3"><br><br>
+
+        <label for="year">Year of Birth (between 1901 and 2099):</label>
+        <input type="number" id="year" name="year" required min="1901" max="2099"><br><br>
+
+        <label><input type="checkbox" id="in-us" name="in-us"> Do you live in the United
+            States?</label><br><br>
+
+        <label for="zipcode">Zipcode (5 digits):</label>
+        <input type="number" id="zipcode" name="zipcode" pattern="\\d{5}"><br><br>
+
+        <label for="password">Password (at least 8 characters):</label>
+        <input type="password" id="password" name="password" required minlength="8"><br><br>
+
+        <label>Preferred type of pizza:</label><br><br>
+        <input type="radio" id="withpineapple" name="pizza" value="With pineapple" required>
+        <label for="withpineapple">With pineapple</label><br>
+        <input type="radio" id="withoutpineapple" name="pizza" value="Without pineapple" required>
+        <label for="withoutpineapple">Without pineapple</label><br>
+        <input type="radio" id="nopizza" name="pizza" value="I do not like pizza" required>
+        <label for="nopizza">I do not like pizza</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="message"></div>
+</body>
+
+</html>
