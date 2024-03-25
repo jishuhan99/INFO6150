@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="radio"],
+input[type="submit"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-top: 0;
+}
+
+#message {
+    margin-top: 20px;
+}
